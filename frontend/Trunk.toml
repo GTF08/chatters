@@ -1,0 +1,9 @@
+[build]
+target = "index.html"
+dist = "dist"
+filehash = false
+
+[serve]
+addresses = ["127.0.0.1", "192.168.0.3"]
+tls_key_path = "self_signed_certs/key.pem"
+tls_cert_path = "self_signed_certs/cert.pem"

@@ -1,0 +1,134 @@
+html {
+  background-color: rgb(35, 32, 36);
+  color: white;
+}
+
+.main {
+  background: rgb(75, 29, 70);
+  margin-left: 300px; /* Same as the width of the sidebar */
+  padding: 10px 10px;
+}
+
+.form *{
+  font-size: 18px;
+  width: 100%;
+}
+
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+.overlay {
+  display: inline;
+  z-index: 1000;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: blue;
+  top: 5%; 
+  left:80%;
+  width: 300px; 
+  height: 150px;
+}
+
+.error-display {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: red;
+}
+
+.sidebar {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 300px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #681d5d; /* Black */
+  overflow: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+  word-wrap: break-word;
+}
+
+.sidebar .sidebar-chats {
+  height: 100%;
+  width: 60px;
+  background-color: #271224;
+  z-index: 2;
+}
+
+.sidebar .sidebar-content {
+  margin-left: 60px;
+  height: 100%;
+  width: 240px;
+  background-color: #55164b;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.sidebar .header {
+  padding:10px;
+  padding-bottom:60px;   /* Height of the footer */
+}
+
+.sidebar .body {
+  padding: 10px;
+  padding-bottom: 60px;   /* Height of the footer */
+  display: block;
+  text-align: center;
+  overflow: hidden;
+}
+
+.sidebar .footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 120px;
+  width: 100%;
+  display: block;
+  text-align: center;
+  overflow: hidden;
+  padding-top: 0px;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.message {
+  width: 400px;
+  height: fit-content;
+  padding: 10px;
+  background-color: #320e5c;
+  border: 1px solid #290e49;
+  border-radius: 10px;
+}
+
+.message .message-username {
+  position: relative;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  text-align: left;
+}
+
+.message .message-text {
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: fit-content(400px);
+  height: fit-content;
+  text-align: left;
+  word-break: break-word;
+  font: 400 1em 'Open Sans', sans-serif;
+}
+
+.message .message-created-at {
+  position: relative;
+  float: right;
+  font-size: .85em;
+  font-weight: 300;
+  bottom: 10px;
+}
