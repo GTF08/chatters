@@ -7,6 +7,8 @@ Backend requires setting up:
 - Postgresql machine (ORMs were not used, sql queries are written to be POSTGRE compatible);
 - Redis machine;
 - Set up environment variables for database and redis connections and private/public keys.
+Every microservice can be started by running either running executable or:
+> cargo run --bin [container_name]
 
 ### Frontend
 Frontend requires to have trunk server installed. It can be launched with following command:
